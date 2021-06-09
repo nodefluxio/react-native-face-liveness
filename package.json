@@ -1,5 +1,5 @@
 {
-  "name": "react-native-face-liveness",
+  "name": "@nodeflux/react-native-face-liveness",
   "version": "0.1.0",
   "description": "Nodeflux react native face liveness plugin",
   "main": "lib/commonjs/index",

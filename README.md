@@ -2,10 +2,14 @@
 
 Nodeflux react native face liveness plugin
 
+## Platform
+
+- Android SDK 21 - 30
+
 ## Installation
 
 ```sh
-npm install react-native-face-liveness
+npm install @nodeflux/react-native-face-liveness
 ```
 
 ## Usage
@@ -15,8 +19,25 @@ import FaceLiveness from "react-native-face-liveness";
 
 // ...
 
-const result = await FaceLiveness.multiply(3, 7);
+const onPressLiveness = () => {
+    FaceLiveness.faceLiveness(
+        'ACCESS_KEY',
+        'SECRET_KEY',
+        (isLive, image, score) => {
+            console.log(isLive, image, score);
+        },
+        (errorMessage) => {
+            console.log(errorMessage);
+        }
+    );
+}
+
+// ...
 ```
+
+Replace `ACCESS_KEY` and `SECRET_KEY` with your keys. You can get your key at here [here](https://cloud.nodeflux.io)
+
+For more information visit [here](https://www.nodeflux.io/) or you can contact us at [here](https://www.nodeflux.io/Contact-Us)
 
 ## Contributing
 

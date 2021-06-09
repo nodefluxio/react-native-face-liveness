@@ -1,7 +1,12 @@
 import { NativeModules } from 'react-native';
 
 type FaceLivenessType = {
-  multiply(a: number, b: number): Promise<number>;
+  faceLiveness(
+    accessKey: string,
+    secretKey: string,
+    onSuccess: CallableFunction,
+    onError: CallableFunction
+  ): any;
 };
 
 const { FaceLiveness } = NativeModules;
