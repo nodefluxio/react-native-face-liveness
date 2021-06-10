@@ -15,7 +15,7 @@ npm install @nodeflux/react-native-face-liveness
 ## Usage
 
 ```js
-import FaceLiveness from "react-native-face-liveness";
+import FaceLiveness from "@nodeflux/react-native-face-liveness";
 
 // ...
 
