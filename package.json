@@ -34,7 +34,10 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "FaceLiveness",
+    "liveness",
+    "nodeflux"
   ],
   "repository": "https://github.com/nodefluxio/react-native-face-liveness.git",
   "author": "billy sutomo <billysutomo.53@gmail.com> (https://github.com/billysutomo)",
